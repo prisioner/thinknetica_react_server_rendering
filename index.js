@@ -1,12 +1,12 @@
-const express = require('express')
+const express = require("express")
 
-require('@babel/register')
+require("@babel/register")
 
-const render = require('./render').default
+const render = require("./render").default
 
 const app = express()
 
-app.get('/', (rew, res) => {
+app.get("/", (rew, res) => {
   const response = `
     <!DOCTYPE html>
     <html lang="en">
@@ -21,4 +21,4 @@ app.get('/', (rew, res) => {
   res.send(response);
 })
 
-app.listen(3001, () => console.log('Server is listening port 3001'))
+app.listen(3001, () => console.log("Server is listening port 3001"))
